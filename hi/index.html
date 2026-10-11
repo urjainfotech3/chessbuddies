@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chess Buddies – शतरंज सीखें और खेलें</title>
+<meta name="description" content="Chess Buddies: बच्चों और परिवारों के लिए एक प्यारा-सा शतरंज ऐप। बॉट, पाठ, पहेलियाँ और चतुरंग, अंग्रेज़ी और 10 भारतीय भाषाओं में।">
+<link rel="icon" href="../icon.png">
+<link rel="canonical" href="https://urjainfotech3.github.io/chessbuddies/hi/">
+<link rel="alternate" hreflang="en" href="https://urjainfotech3.github.io/chessbuddies/">
+<link rel="alternate" hreflang="hi" href="https://urjainfotech3.github.io/chessbuddies/hi/">
+<link rel="alternate" hreflang="gu" href="https://urjainfotech3.github.io/chessbuddies/gu/">
+<link rel="alternate" hreflang="mr" href="https://urjainfotech3.github.io/chessbuddies/mr/">
+<link rel="alternate" hreflang="bn" href="https://urjainfotech3.github.io/chessbuddies/bn/">
+<link rel="alternate" hreflang="te" href="https://urjainfotech3.github.io/chessbuddies/te/">
+<link rel="alternate" hreflang="ta" href="https://urjainfotech3.github.io/chessbuddies/ta/">
+<link rel="alternate" hreflang="kn" href="https://urjainfotech3.github.io/chessbuddies/kn/">
+<link rel="alternate" hreflang="or" href="https://urjainfotech3.github.io/chessbuddies/or/">
+<link rel="alternate" hreflang="ml" href="https://urjainfotech3.github.io/chessbuddies/ml/">
+<link rel="alternate" hreflang="pa" href="https://urjainfotech3.github.io/chessbuddies/pa/">
+<link rel="alternate" hreflang="x-default" href="https://urjainfotech3.github.io/chessbuddies/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chess Buddies">
+<meta property="og:title" content="Chess Buddies – शतरंज सीखें और खेलें">
+<meta property="og:description" content="Chess Buddies: बच्चों और परिवारों के लिए एक प्यारा-सा शतरंज ऐप। बॉट, पाठ, पहेलियाँ और चतुरंग, अंग्रेज़ी और 10 भारतीय भाषाओं में।">
+<meta property="og:url" content="https://urjainfotech3.github.io/chessbuddies/hi/">
+<meta property="og:image" content="https://urjainfotech3.github.io/chessbuddies/share.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta property="og:image:alt" content="Chess Buddies">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://urjainfotech3.github.io/chessbuddies/share.jpg">
+<style>
+:root{--bg:#f7f9f4;--card:#fff;--text:#1f2a1a;--muted:#5b6a52;--accent:#4f8a2b;--accent-d:#3b6a1f;--soft:#e9f2e1}
+@media (prefers-color-scheme:dark){:root{--bg:#141a11;--card:#1d2619;--text:#eef3ea;--muted:#a6b59d;--accent:#7fc24a;--accent-d:#9ad766;--soft:#22301c}}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Devanagari","Noto Sans Gujarati","Noto Sans Bengali","Noto Sans Telugu","Noto Sans Tamil","Noto Sans Kannada","Noto Sans Oriya","Noto Sans Malayalam","Noto Sans Gurmukhi",sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+nav.lang{border-bottom:1px solid rgba(127,127,127,.18);background:var(--card)}
+nav.lang ul{list-style:none;margin:0 auto;padding:8px 10px;display:flex;flex-wrap:wrap;justify-content:center;gap:2px 2px;max-width:760px}
+nav.lang a{display:block;white-space:nowrap;padding:4px 10px;border-radius:999px;text-decoration:none;color:var(--muted);font-size:.92em}
+nav.lang a[aria-current]{background:var(--accent);color:#fff;font-weight:600}
+header{text-align:center;padding:28px 0 8px}
+header img.icon{width:112px;height:112px;border-radius:24px;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+h1{font-size:2em;margin:14px 0 4px;line-height:1.3}
+.tag{color:var(--muted);font-size:1.1em;margin:0 auto;max-width:30em}
+.banner{width:100%;border-radius:16px;margin:22px 0 6px;display:block}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:12px 22px;border-radius:999px;font-weight:600;margin:10px 4px}
+.btn.alt{background:transparent;color:var(--accent-d);border:2px solid var(--accent)}
+.soon{color:var(--muted);font-size:.95em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:18px 0}
+.card{background:var(--card);border-radius:14px;padding:14px 16px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.card h3{margin:0 0 4px;font-size:1.05em}
+.card p{margin:0;color:var(--muted);font-size:.95em}
+h2{margin-top:1.8em;line-height:1.35}
+.why{background:var(--soft);border-radius:18px;padding:18px 20px;margin:26px 0 8px}
+.why h2{margin:0 0 6px}
+.why img.thumb{float:right;width:96px;height:96px;border-radius:50%;object-fit:cover;margin:0 0 8px 14px;border:3px solid var(--card);box-shadow:0 2px 8px rgba(0,0,0,.15)}
+article.story figure img{height:auto}
+.why p{margin:0 0 8px}
+.why a{font-weight:600}
+.langs{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0;padding:0;list-style:none}
+.langs a{display:block;background:var(--card);border-radius:999px;padding:6px 14px;box-shadow:0 1px 3px rgba(0,0,0,.08);text-decoration:none;color:var(--text)}
+footer{text-align:center;color:var(--muted);font-size:.9em;padding:28px 0 40px}
+a{color:var(--accent-d)}
+.btn{color:#fff}.btn.alt{color:var(--accent-d)}
+article.story{max-width:640px;margin:0 auto;padding:8px 0 20px}
+article.story h1{text-align:center;margin:28px 0 18px}
+article.story p{font-size:1.12em;margin:0 0 1.05em}
+article.story p.close{font-style:italic;color:var(--accent-d);font-size:1.18em;text-align:center;margin-top:1.6em}
+article.story p.sign{text-align:right;font-weight:600;color:var(--muted)}
+article.story figure{margin:0 0 22px}
+article.story figure img{width:100%;border-radius:16px;display:block}
+.back{display:inline-block;margin-top:18px;text-decoration:none;font-weight:600}
+.cta{text-align:center;margin:10px 0 0}
+</style>
+</head>
+<body>
+<nav class="lang" aria-label="Language"><ul><li><a href="../" lang="en" hreflang="en">English</a></li><li><a href="../hi/" lang="hi" hreflang="hi" aria-current="page">हिन्दी</a></li><li><a href="../gu/" lang="gu" hreflang="gu">ગુજરાતી</a></li><li><a href="../mr/" lang="mr" hreflang="mr">मराठी</a></li><li><a href="../bn/" lang="bn" hreflang="bn">বাংলা</a></li><li><a href="../te/" lang="te" hreflang="te">తెలుగు</a></li><li><a href="../ta/" lang="ta" hreflang="ta">தமிழ்</a></li><li><a href="../kn/" lang="kn" hreflang="kn">ಕನ್ನಡ</a></li><li><a href="../or/" lang="or" hreflang="or">ଓଡ଼ିଆ</a></li><li><a href="../ml/" lang="ml" hreflang="ml">മലയാളം</a></li><li><a href="../pa/" lang="pa" hreflang="pa">ਪੰਜਾਬੀ</a></li></ul></nav>
+<div class="wrap">
+  <header>
+    <img class="icon" src="../icon.png" alt="Chess Buddies">
+    <h1>Chess Buddies</h1>
+    <p class="tag">बच्चों के लिए शतरंज सीखने और खेलने का सबसे प्यारा तरीका। एक पापा ने अपने बेटे के लिए बनाया।</p>
+    <p>
+      <!-- PLAY_LINK: when the app is live, replace this span with
+           <a class="btn" href="https://play.google.com/store/apps/details?id=com.urjainfotech.chessbuddies">Google Play</a> -->
+      <span class="soon">जल्द ही Google Play पर</span>
+    </p>
+    <p><a class="btn alt" href="../privacy.html">गोपनीयता नीति (अंग्रेज़ी में)</a></p>
+  </header>
+
+  <img class="banner" src="../banner.png" alt="Chess Buddies">
+
+  <section class="why">
+    <img class="thumb" src="../story_thumb.jpg" alt="Darshan Gor and Tej" width="120" height="120">
+    <h2>हमने Chess Buddies क्यों बनाया</h2>
+    <p>Chess Buddies की शुरुआत एक पिता के अपने बेटे को दिए तोहफ़े के रूप में हुई। तेज को शतरंज बहुत पसंद था, पर जो शतरंज ऐप मिले वे सिर्फ़ अंग्रेज़ी में थे, और तेज गुजराती में पढ़ता है। इसलिए उसके पापा ने अपने फ़ोन पर, रात में और बस के सफ़र के दौरान, उसके लिए एक ऐप बनाया। तेज को वह बहुत पसंद आया। अब यह शतरंज से प्यार करने वाले हर बच्चे के लिए है।</p>
+    <a href="story.html">हमारी कहानी पढ़ें →</a>
+  </section>
+
+  <h2>इसमें क्या है</h2>
+  <div class="grid"><div class="card"><h3>♟ 9 दोस्ताना बॉट</h3><p>नन्हे चूज़े Pip से लेकर Robo GM तक। हर एक का अपना स्वभाव है और चुनौती धीरे-धीरे बढ़ती है।</p></div><div class="card"><h3>🗺 रोमांच का नक्शा</h3><p>प्यादा गाँव से अंत के खेल के पहाड़ तक पाठ: मोहरे, नियम, शह-मात, चालें, ओपनिंग और अंत का खेल।</p></div><div class="card"><h3>🧠 2,600+ पहेलियाँ</h3><p>आज की पहेली, पहेली दौड़ और 18 विषय, साथ में आपकी अपनी पहेली रेटिंग।</p></div><div class="card"><h3>🎮 मिनी-गेम्स</h3><p>प्यादों की जंग, घोड़े की यात्रा, मारो-मारो और खाना ढूँढो।</p></div><div class="card"><h3>🇮🇳 चतुरंग</h3><p>भारत का असली शतरंज, जो 1,500 साल पहले जन्मा था। इसकी अपनी कहानी और अपना कंप्यूटर प्रतिद्वंद्वी भी है।</p></div><div class="card"><h3>⭐ खेल समीक्षा</h3><p>हर खेल के बाद कोच सबसे अच्छी चालें और गलतियाँ दिखाता है। साथ में विश्लेषण बोर्ड भी।</p></div></div>
+
+  <h2>परिवारों के लिए बना</h2>
+  <div class="grid"><div class="card"><h3>👧 6 बच्चों तक</h3><p>एक ही फ़ोन पर हर बच्चे की अपनी प्रगति, रेटिंग और ट्रॉफियाँ।</p></div><div class="card"><h3>🔐 माता-पिता का हिस्सा</h3><p>रोज़ खेलने के समय की सीमा, चाहें तो माता-पिता का PIN, और आज की पहेली का हल्का-सा रिमाइंडर।</p></div><div class="card"><h3>📊 साप्ताहिक रिपोर्ट</h3><p>देखिए आपके बच्चे ने क्या सीखा, और परिवार के साथ प्रगति कार्ड शेयर कीजिए।</p></div><div class="card"><h3>🛡 बच्चों के लिए सुरक्षित</h3><p>कोई अकाउंट नहीं, कोई चैट नहीं, कोई व्यक्तिगत विज्ञापन नहीं। खरीदारी के लिए किसी बड़े की मंज़ूरी ज़रूरी है।</p></div></div>
+
+  <h2>आपकी भाषा में</h2>
+  <p>पूरा ऐप, बोलने वाले कोच समेत, आपके बच्चे की भाषा बोलता है:</p>
+  <ul class="langs"><li><a href="../" lang="en">English</a></li><li><a href="../hi/" lang="hi">हिन्दी</a></li><li><a href="../gu/" lang="gu">ગુજરાતી</a></li><li><a href="../mr/" lang="mr">मराठी</a></li><li><a href="../bn/" lang="bn">বাংলা</a></li><li><a href="../te/" lang="te">తెలుగు</a></li><li><a href="../ta/" lang="ta">தமிழ்</a></li><li><a href="../kn/" lang="kn">ಕನ್ನಡ</a></li><li><a href="../or/" lang="or">ଓଡ଼ିଆ</a></li><li><a href="../ml/" lang="ml">മലയാളം</a></li><li><a href="../pa/" lang="pa">ਪੰਜਾਬੀ</a></li></ul>
+
+  <h2>मुफ़्त, और चाहें तो Pro</h2>
+  <p>Chess Buddies बच्चों के लिए सुरक्षित विज्ञापनों के साथ मुफ़्त है। पाठ, मिनी-गेम्स, सभी भाषाएँ और माता-पिता की सेटिंग्स हमेशा मुफ़्त हैं। <strong>Chess Buddies Pro</strong> एक बार की खरीद है, जो विज्ञापन हटाती है और सारे बॉट, असीमित पहेलियाँ, समीक्षाएँ और संकेत, और हर बोर्ड स्टाइल खोल देती है।</p>
+
+  <h2>संपर्क</h2>
+  <p>कोई सवाल या सुझाव? <a href="mailto:urjainfotech3@gmail.com">urjainfotech3@gmail.com</a> पर ईमेल करें।</p>
+
+  <footer>© 2026 Urja Infotech · <a href="../privacy.html">गोपनीयता नीति (अंग्रेज़ी में)</a></footer>
+</div>
+</body>
+</html>
